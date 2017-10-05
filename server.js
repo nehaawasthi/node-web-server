@@ -1,6 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
-const port = process.evn.PORT||3000;
+const port = process.env.PORT||3000;
 hbs.registerPartials(__dirname+'/views');
 var app = express();
 
